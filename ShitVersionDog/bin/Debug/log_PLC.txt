@@ -1,0 +1,23 @@
+
+
+2020/4/27 14:28:01   ST1300_PLC_BBAC_20200423_1828.ap14  Unable to compare   Error when calling method 'Open' of type 'Siemens.Engineering.ProjectComposition'.
+
+Unable to open the project under path 'D:\Ap14Projects\ST1300_PLC_BBAC_20200423_1828\ST1300_PLC_BBAC_20200423_1828.ap14'.
+
+2020/4/27 14:28:07   ST1860_PLC_BBAC_20200424_1355.ap14  Unable to compare   Error when calling method 'Open' of type 'Siemens.Engineering.ProjectComposition'.
+
+Unable to open the project under path 'D:\Ap14Projects\ST1860_PLC_BBAC_20200424_1355\ST1860_PLC_BBAC_20200424_1355.ap14'.
+
+The following add-on packages are missing: HW.SENTRON.7KM.PAC.Rack.MDD_SENTRON_7KM_PAC_Rack_V1.0_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+HW.SENTRON.7KM.PAC.SubModule.Head.MDD_7KMxxxx_xBx00_xAA0_SubHead_V1.0_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+HW.SENTRON.7KM.Communication.PROFINET.Port.MDD_7KM9300_0AE00_0AA0_SubPort_V2.1_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+HW.SENTRON.7KM.Communication.PROFINET.Interface.MDD_7KM9300_0AE00_0AA0_SubInterface_V2.1_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+
+2020/4/27 14:28:07   ST1800_PLC_BBAC_20200424_1358.ap14  Unable to compare   Error when calling method 'Open' of type 'Siemens.Engineering.ProjectComposition'.
+
+Unable to open the project under path 'D:\Ap14Projects\ST1800_PLC_BBAC_20200424_1358\ST1800_PLC_BBAC_20200424_1358.ap14'.
+
+The following add-on packages are missing: HW.SENTRON.7KM.PAC.Rack.MDD_SENTRON_7KM_PAC_Rack_V1.0_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+HW.SENTRON.7KM.PAC.SubModule.Head.MDD_7KMxxxx_xBx00_xAA0_SubHead_V1.0_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+HW.SENTRON.7KM.Communication.PROFINET.Port.MDD_7KM9300_0AE00_0AA0_SubPort_V2.1_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
+HW.SENTRON.7KM.Communication.PROFINET.Interface.MDD_7KM9300_0AE00_0AA0_SubInterface_V2.1_14.0.0:11.0.0.0.0(PackageContainerWithoutProduct) Unknown
