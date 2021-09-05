@@ -1,0 +1,14 @@
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\ShitVersionDog.exe.config
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\ShitVersionDog.exe.manifest
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\ShitVersionDog.application
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\ShitVersionDog.exe
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\ShitVersionDog.pdb
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.exe.manifest
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.application
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.exe
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.pdb
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\Siemens.Engineering.dll
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\bin\Debug\Siemens.Engineering.Hmi.dll
+C:\Users\Administrator\source\repos\Tia-portal-online-offline-comparasion-\ShitVersionDog\obj\Debug\ShitVersionDog.csproj.CopyComplete

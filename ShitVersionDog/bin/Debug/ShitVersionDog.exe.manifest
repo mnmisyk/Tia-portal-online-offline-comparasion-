@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="ShitVersionDog.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ShitVersionDog" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ShitVersionDog" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="ShitVersionDog.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,47 +43,47 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShitVersionDog.exe" size="17920">
-      <assemblyIdentity name="ShitVersionDog" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="ShitVersionDog" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Jv9d/MEH3hWEH5x3tj8uExAsUepG64CHbqyVLr/Zo8A=</dsig:DigestValue>
+        <dsig:DigestValue>YJb2YPOD4YuAB/kLX1Nkhp7QCFBvtAkSJcDbeFNH6Kk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Siemens.Engineering.dll" size="533504">
-      <assemblyIdentity name="Siemens.Engineering" version="14.0.1.0" publicKeyToken="D29EC89BAC048F84" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Siemens.Engineering.dll" size="1422848">
+      <assemblyIdentity name="Siemens.Engineering" version="16.0.0.0" publicKeyToken="D29EC89BAC048F84" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>brfD9/vEGpcSsYlXQWM5mdTQovNya9NeyuMCPXCOVEU=</dsig:DigestValue>
+        <dsig:DigestValue>nECCJxkeAIUZYKhV6ot0jSGsMf7dIi3NhmOic+JGFSY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Siemens.Engineering.Hmi.dll" size="16080">
-      <assemblyIdentity name="Siemens.Engineering.Hmi" version="14.0.1.0" publicKeyToken="D29EC89BAC048F84" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Siemens.Engineering.Hmi.dll" size="17592">
+      <assemblyIdentity name="Siemens.Engineering.Hmi" version="16.0.0.0" publicKeyToken="D29EC89BAC048F84" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pHCitQYJCnVSjhzZLFMZboOLetVvnrfgTq4OoTbeUrM=</dsig:DigestValue>
+        <dsig:DigestValue>HbvdfVqagGRSvGURpZNW92z0Iba2UUQU5VWkp4amKLg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ShitVersionDog.exe.config" size="436">
+  <file name="ShitVersionDog.exe.config" size="438">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>KbmqG1By9gxdNUwbdvMK4IOv6QiqO1CW/k7SJAZf5F4=</dsig:DigestValue>
+      <dsig:DigestValue>DQQBuMXort/3j6tdjaDryCtt2ulBuZyGU6Zl2WGxyAY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

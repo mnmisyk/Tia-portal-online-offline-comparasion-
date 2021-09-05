@@ -65,13 +65,13 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Siemens.Engineering, Version=14.0.1.0, Culture=neutral, PublicKeyToken=d29ec89bac048f84, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Siemens.Engineering.dll</HintPath>
+    <Reference Include="Siemens.Engineering">
+      <HintPath>bin\Debug\V16\Siemens.Engineering.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Siemens.Engineering.Hmi, Version=14.0.1.0, Culture=neutral, PublicKeyToken=d29ec89bac048f84, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Siemens.Engineering.Hmi.dll</HintPath>
+    <Reference Include="Siemens.Engineering.Hmi">
+      <HintPath>bin\Debug\V16\Siemens.Engineering.Hmi.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -86,7 +86,6 @@
   <ItemGroup>
     <Compile Include="7zHelper.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -103,6 +102,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define V16
+#define Plcsim
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -38,13 +40,13 @@ namespace ShitVersionDog
 
         static void Main(string[] args)
         {
-          
-           // TiaPortal _tiaPortal = new TiaPortal(TiaPortalMode.WithoutUserInterface);
+            //test tia openness availability
+            //TiaPortal _tiaPortal = new TiaPortal(TiaPortalMode.WithoutUserInterface);
          
 
             DelectDir(TargetFolder);
             List<string> fl = new List<string>();   //最后实际出来的zap14 ，最新的项目
-            List<string> Zap14Files = new List<string>();
+            List<string> Zap16Files = new List<string>();
 
             #region 交互
             Console.Clear();
@@ -115,13 +117,11 @@ namespace ShitVersionDog
            // if (ProjectPath.Trim().Length == 0)
            // {
              string   ProjectPath = TargetFolder;
-           // }
-           // Console.ReadKey();
+            // }
+            // Console.ReadKey();
 
             #endregion
-
-
-            director(SourceFolder, ref fl, ".zap14");
+            director(SourceFolder, ref fl, ".zap16");
             //获取到实际的文件信息后再利用linq筛选
             var query = from f in FsInfoList
                         group f by f.Name.Split('_')[0] into g
@@ -129,34 +129,30 @@ namespace ShitVersionDog
             foreach (var item in query)
             {
                 var k = item.First();
-                if (!Zap14Files.Contains(k.FullName))
+                if (!Zap16Files.Contains(k.FullName))
                 {
-                    Zap14Files.Add(k.FullName);
+                    Zap16Files.Add(k.FullName);
                 }
             }
 
 
-            Task ts = _7zHelper.RunCMDCommand(Zap14Files, TargetFolder);
-
-            ts.Wait();  //确保所有都解压之后才能继续
-
-
+            _7zHelper.RunCMDCommand(Zap16Files, TargetFolder).Wait();
 
             #region get ap14 path
             List<string> FileList = new List<string>();
-            List<string> FileListAp14 = new List<string>();
-            director(ProjectPath, ref FileList, ".ap14");
+            List<string> FileListAp16 = new List<string>();
+            director(ProjectPath, ref FileList, ".ap16");
             foreach (var item in FileList)
             {
-                if (item.Substring(item.Length - 5) == ".ap14")
+                if (item.Substring(item.Length - 5) == ".ap16")
                 {
-                    FileListAp14.Add(item);
+                    FileListAp16.Add(item);
                 }
             }
             #endregion
             File.Delete(LogPlcPath);
 
-            foreach (var item in FileListAp14)
+            foreach (var item in FileListAp16)
             {
                 FileQueue.Enqueue(item);
             }
@@ -248,16 +244,16 @@ namespace ShitVersionDog
             return x;
         }
 
-        private static Task<string> CompareOnlieResult(string file_path)
+        private static  Task<string> CompareOnlieResult(string file_path)
         {
             
 
             return Task.Run(() =>
             {
 
-
+               
                 string Result = "Unable to compare";
-
+                //Console.WriteLine(Result);
                 TiaPortal _tiaPortal = new TiaPortal(TiaPortalMode.WithoutUserInterface);
                 try
                 {
@@ -320,11 +316,13 @@ namespace ShitVersionDog
                 finally
                 {
                     _tiaPortal.Dispose();
+
                 }
 
-                // _tiaPortal.Dispose();
+                
                 return Result;
             });
+           
         }
 
 
@@ -364,9 +362,15 @@ namespace ShitVersionDog
         {
             ConnectionConfiguration configuration = onlineProvider.Configuration;
             ConfigurationMode mode = configuration.Modes.Find(@"PN/IE");
-            ConfigurationPcInterface pcInterface = mode.PcInterfaces.Find(NetworkCard, 1);
+#if Plcsim
+            ConfigurationPcInterface pcInterface = mode.PcInterfaces.Find("PLCSIM", 1);
+#else
+ ConfigurationPcInterface pcInterface = mode.PcInterfaces.Find(NetworkCard, 1);
+#endif
+
             // or network pc interface that is connected to plc
-            ConfigurationTargetInterface slot = pcInterface.TargetInterfaces.Find("1 X2");
+
+            ConfigurationTargetInterface slot = pcInterface.TargetInterfaces.Find("1 X1");
             configuration.ApplyConfiguration(slot);
             // After applying configuration, you can go online
             onlineProvider.GoOnline();
